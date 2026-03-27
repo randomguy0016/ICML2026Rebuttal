@@ -68,5 +68,4 @@ we give Figure \ref{embedding} that visualizes the transformation of raw data (t
 | Characteristic Lattice Algorithm (CLA) |  |
 | $\delta$ (CLA context) | Side length of hypercubes in subsampling grid (Lemma \ref{l5}) |
 | $X_{\delta}^*$ | Subsampled point cloud using CLA with grid size $\delta$ |
-| \bottomrule |  |
 
