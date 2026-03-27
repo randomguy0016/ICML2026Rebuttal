@@ -11,9 +11,9 @@ we give Figure \ref{embedding} that visualizes the transformation of raw data (t
 
 ### Notation
 
-| ll@{}} \toprule \textbf{Notation} | \textbf{Definition} |
+| Notation | Definition |
 | --- | --- |
-| \midrule \multicolumn{2}{l}{\textbf{General Machine Learning}} |  |
+| General Machine Learning |  |
 | $\mathcal{X} \subseteq \mathbb{R}^d$ | $d$-dimensional input feature space |
 | $\mathcal{Y} = {0, 1}$ | Binary label space |
 | $D = {(x_i, y_i)}_{i=1}^n$ | Training dataset with $n$ i.i.d. samples |
@@ -22,7 +22,7 @@ we give Figure \ref{embedding} that visualizes the transformation of raw data (t
 | $\mathcal{A}$ | Learning algorithm (stochastic) |
 | $\theta$ | Model parameters |
 | $\mathbb{Q}$ | Distribution over model parameters $\theta$ |
-| \addlinespace \multicolumn{2}{l}{\textbf{Topology and Decision Boundary}} |  |
+| Topology and Decision Boundary |  |
 | $\mathbb{M}$ | Decision boundary manifold: ${z \in \mathbb{Z} \mid p_{Z|F}(z|1) = p_{Z|F}(z|0)}$ |
 | $p_Z$ | Probability density function over space $\mathbb{Z}$ |
 | $X$ | Training set viewed as a point cloud |
@@ -30,7 +30,7 @@ we give Figure \ref{embedding} that visualizes the transformation of raw data (t
 | $\mu$ | Subsampling ratio (typically $\mu \le 0.5$) |
 | $\tau$ | $(\tau, \mu)$-decision boundary variability (Def. \ref{def3}) |
 | $AV(f_{\mathbb{Q}}, \mathcal{D})$ | Algorithmic decision boundary variability (Eq. \ref{eqn-6}) |
-| \addlinespace \multicolumn{2}{l}{\textbf{Topological Prototype Augmentation (TPA)}} |  |
+| Topological Prototype Augmentation (TPA) |  |
 | $\mathbb{R}^m, \mathbb{R}^{\bar{m}}$ | Original ($m$-D) and embedded ($\bar{m}$-D) data spaces, $m < \bar{m}$ |
 | $\bar{m}-m$ | Number of pseudo-dimensions added |
 | $M$ | Number of topological component learners ${f_i}_{i=1}^M$ |
@@ -40,7 +40,7 @@ we give Figure \ref{embedding} that visualizes the transformation of raw data (t
 | $y_+, y_-$ | Indices for positive and negative classes |
 | $n_+, n_-$ | Number of positive/negative training samples |
 | $C_+, C_-$ | Constants related to positive/negative classes in generalization bound |
-| \addlinespace \multicolumn{2}{l}{\textbf{High-Dimensional Embedding}} |  |
+| High-Dimensional Embedding |  |
 | $T_j$ | High-dimensional embedding transformation for triangle $j$ |
 | $J_j$ | Deformation gradient for triangle $j$ (QR decomposition) |
 | $W_j, \bar{W}_j$ | Edge vectors before and after embedding for triangle $j$ |
@@ -53,11 +53,11 @@ we give Figure \ref{embedding} that visualizes the transformation of raw data (t
 | $K$ | Number of nearest neighbors |
 | $E_1, E_2, E_3$ | Objective function terms: deformation, embedding regularization, topological regularization (Eqs. \ref{eqn-16}, \ref{eqn-17}, \ref{eqn-18}) |
 | $\rho_1, \rho_2$ | Regularization hyperparameters for $E_2$ and $E_3$ |
-| \addlinespace \multicolumn{2}{l}{\textbf{Persistent Homology and TDA}} |  |
+| Persistent Homology and TDA |  |
 | $PD(i)$ | Persistence diagram for local neighborhood of node $i$ |
 | $W_2(\cdot, \cdot)$ | 2-Wasserstein distance between persistence diagrams |
 | $H(\cdot)$ | Homology group (implicit in persistent homology references) |
-| \addlinespace \multicolumn{2}{l}{\textbf{Theoretical Analysis}} |  |
+| Theoretical Analysis |  |
 | $\mathbb{R}_{\text{exp}}(\mathcal{D}, \mathbb{Q})$ | Expected risk (generalization error) of classifier $f_{\mathbb{Q}}$ |
 | $\mathbb{R}(\mathcal{D}, \mathcal{A}(X))$ | Generalization error of algorithm $\mathcal{A}$ on dataset $X$ |
 | $\phi(\cdot)$ | Margin cost function: $\phi(z) = \max(0, 1-z)$ for $z \le 1$, else $0$ |
@@ -65,7 +65,7 @@ we give Figure \ref{embedding} that visualizes the transformation of raw data (t
 | $\zeta, \delta$ | Confidence parameters (failure probabilities) |
 | $\varphi$ | Upper bound on topological variability near decision boundary (Lemma \ref{l4}) |
 | $\Omega, \Delta$ | Intermediate variables in Theorem \ref{t2}: $\Omega = \varphi + \sqrt{\frac{\log(1/\delta)}{2(1-\mu)n}}$, $\Delta = \mu \log \frac{e}{\mu} + \frac{1}{n}\log \frac{2}{\delta}$ |
-| \addlinespace \multicolumn{2}{l}{\textbf{Characteristic Lattice Algorithm (CLA)}} |  |
+| Characteristic Lattice Algorithm (CLA) |  |
 | $\delta$ (CLA context) | Side length of hypercubes in subsampling grid (Lemma \ref{l5}) |
 | $X_{\delta}^*$ | Subsampled point cloud using CLA with grid size $\delta$ |
 | \bottomrule |  |
