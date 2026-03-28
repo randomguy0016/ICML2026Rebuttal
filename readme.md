@@ -9,6 +9,41 @@ we give Figure \ref{embedding} that visualizes the transformation of raw data (t
 
 ### Caption for Figure 6 (Extensive Experiment)
 
+### Experimental Setup
+
+|    **Dataset**    | **Protein** | **Fall**  | **Trajectory** |  **PEMS04**   |
+| :---------------: | :---------: | :-------: | :------------: | :-----------: |
+|   Total Samples   |  (23279,3)  | (29337,3) |   (26770,2)    | (307,16992,3) |
+|      Normal       |    20490    |   27888   |     21588      |       -       |
+|      Anomaly      |    2789     |   1449    |      5182      |       -       |
+| Enhanced Features |      3      |     6     |       4        |       4       |
+
+### Hyperparameters
+
+|     **Component**      |       **Parameter**        | **Value** |
+| :--------------------: | :------------------------: | :-------: |
+|        **TPA**         | Regularization $\\lambda$  |  $10^6$   |
+|                        |       KNN Neighbors        |    10     |
+|                        |  Optimization Iterations   |    10     |
+|                        | Clustering Threshold ($c$) |    0.4    |
+|                        |      Max Edge Length       |     5     |
+|                        |         Optimizer          | L-BFGS-B  |
+|      **NNG-MIX**       |    KNN Neighbors ($k$)     |     5     |
+|                        |       Label Strategy       | minority  |
+|         **BP**         |           Epochs           |    500    |
+|                        |         Batch Size         |    16     |
+|                        |         Optimizer          |   Adam    |
+|      **XGBoost**       |         Max Depth          |     3     |
+|                        |        N Estimators        |    100    |
+|                        |       Learning Rate        |    0.1    |
+|        **GAN**         |      Latent Dimension      |    100    |
+|                        |           Epochs           |    50     |
+|                        |         Batch Size         |    32     |
+|   **Deep OD Models**   |           Epochs           |    100    |
+|   (DevNet, DeepSAD,    |         Batch Size         |    64     |
+| PReNet, RoSAS, FeaWAD) |       Learning Rate        | $10^{-3}$ |
+
+
 ### Notation
 
 | Notation | Definition |
