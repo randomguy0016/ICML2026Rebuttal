@@ -6,8 +6,10 @@
 we give Figure \ref{embedding} that visualizes the transformation of raw data (top row: blue for normal, pink for anomalies) via TPA-PD (pseudo dimensions) and TPA-HDE (high-dimensional embedding), with color intensity representing the magnitude of learned topological features. The visualization highlights two key effects: (1) enhanced separability, where anomalous regions (bright/dark hues) become distinct from normal ones in the embedding space, contrasting with their entanglement in raw data; and (2) topological discrimination, mapping structurally dissimilar regions (e.g., disconnected components) to spatially distant locations, effectively "untangling" complex geometries.
 
 ### Caption for Figure 4
+Line plot of model accuracy across several baselines, illustrating performance improvements with the proposed method across different baselines.
 
 ### Caption for Figure 6 (Extensive Experiment)
+Performance comparison (MSE) across different baseline models using original features versus the proposed TPA-feature.
 
 ### Experimental Setup
 
