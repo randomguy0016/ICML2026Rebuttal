@@ -14,7 +14,7 @@ Performance comparison (MSE) across different baseline models using original fea
 ### Caption for Scaling Analysis (scaling_curves.png)
 Four-panel scaling analysis : (a) PH computation time vs. sample size $n$ with $O(n^{2.55})$ power-law fit, (b) PH computation time vs. data dimension $d$ showing weak dimension dependence, (c) Wasserstein distance computation time vs. sample size for varying neighborhood sizes $k \in \{4, 8, 16\}$ demonstrating linear scaling in both $n$ and $k$, and (d) parallel speedup analysis showing sub-unity speedup for all methods, indicating parallelization overhead exceeds benefits for small-to-moderate problem sizes.
 
-![Scaling Analysis(scaling_curves.png)
+![Scaling Analysis([scaling_curves.png](https://github.com/randomguy0016/ICML2026Rebuttal/blob/main/scaling_curves.png))
 
 ### Experimental Setup
 
